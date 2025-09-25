@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Geist+Mono:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geist Mono', sans-serif;
+    background-color: #484848;
+}
