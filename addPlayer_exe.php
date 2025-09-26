@@ -53,6 +53,8 @@
   $last_id = $conn->lastInsertId();
   $query = "insert into players_statistics (player_id) values ('" . $last_id . "')";
   $conn->exec($query);
+  $query = "insert into players_faults (player_id) values ('" . $last_id . "')";
+  $conn->exec($query);
 
   header("Location: /Manager-PT/");
 ?>
