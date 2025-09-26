@@ -15,13 +15,13 @@
         Equipa
       </a>
       <a
-        class="<?php echo $class; ?> <?php echo ($_SERVER['REQUEST_URI'] === "/Manager-PT/treinos.php") ? "bg-[#856c03] text-white pointer-events-none" : "hover:bg-[#b39000] hover:text-white"; ?>"
+        class="<?php echo $class; ?> <?php echo (str_contains($_SERVER['REQUEST_URI'], 'treinos')) ? "bg-[#856c03] text-white pointer-events-none" : "hover:bg-[#b39000] hover:text-white"; ?>"
         href="<?php echo '/' . $url[1] . "/treinos.php"; ?>"
       >
         Treinos
       </a>
       <a
-        class="<?php echo $class; ?> <?php echo ($_SERVER['REQUEST_URI'] === "/Manager-PT/info.php") ? "bg-[#856c03] text-white pointer-events-none" : "hover:bg-[#b39000] hover:text-white"; ?>"
+        class="<?php echo $class; ?> <?php echo (str_contains($_SERVER['REQUEST_URI'], 'info')) ? "bg-[#856c03] text-white pointer-events-none" : "hover:bg-[#b39000] hover:text-white"; ?>"
         href="<?php echo '/' . $url[1] . "/info.php"; ?>"
       >
         Informações

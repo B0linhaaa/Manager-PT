@@ -23,18 +23,9 @@ CREATE TABLE `players_statistics` (
 CREATE TABLE `players_faults` (
 	`id` int AUTO_INCREMENT NOT NULL,
     `player_id` int NOT NULL,
-    `faults` int NOT NULL,
+    `faults` TEXT NOT NULL,
 	PRIMARY KEY (`id`),
     FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE
-);
-
-CREATE TABLE `informations` (
-	`id` int AUTO_INCREMENT NOT NULL,
-    `address` varchar(255) NOT NULL,
-    `phone` varchar(255) NOT NULL,
-    `email` varchar(255) NOT NULL,
-    `website` varchar(255) NOT NULL,
-	PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `trainings` (
